@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_parent1"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical">
+
+
+    <com.xiaoqi.xptest.RotateImageView
+        android:id="@+id/riv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test1"/>
+
+    <com.xiaoqi.xptest.CustomerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/rl_parent2"
+        android:layout_width="205dp"
+        android:layout_height="135dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp">
+
+        <com.xiaoqi.xptest.RotateImageView
+            android:id="@+id/riv2"
+            android:layout_width="200dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test2"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_stroke"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</RelativeLayout>
